@@ -30,7 +30,7 @@ export const ProjectsPage = () => {
           w="100%"
           maxW="1100px"
           height="100%"
-          maxH="790px"
+          maxH={["500px","550px","790px"]}
           h={["", "", "100%"]}
           justify={["","","center"]}
             overflow="auto"

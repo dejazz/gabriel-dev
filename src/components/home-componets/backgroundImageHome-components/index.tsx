@@ -13,7 +13,7 @@ export const ImageHome = () => {
     <>
     
       <Image
-        width={["", "", "100%"]}
+        width={["", "", "70%"]}
         height={["", "", "70%"]}
         maxW={["", "", "600px"]}
         maxH={["", "", "600px"]}
@@ -22,17 +22,18 @@ export const ImageHome = () => {
         alt="Planet"
       />
       <ChakraBox
+       display={["none", "none", "none", "flex"]}
         width="100%"
-        display={["none", "none", "none", "flex"]}
         animate={{
-          scale: [1, 1.1, 1.1, 1, 1],
-          rotate: [0, 180, 360],
+          scale: [1, 1, 1, 1, 1],
+          rotate: [0, 360],
         }}
         // @ts-ignore no problem in operation, although type error appears.
         transition={{
-          duration: 30,
+          duration: 20,
           ease: "easeInOut",
-          repeat: Infinity,          
+          repeat: Infinity,
+          
         }}
       >
         <Image
@@ -41,7 +42,7 @@ export const ImageHome = () => {
           height={["", "", "100%"]}
           maxW={["", "", "500px"]}
           maxH={["", "", "500px"]}
-          display={["none", "none", "none", "flex"]}
+         
           src={require("../../imgs/centerPlanet.png")}
           alt="Planet"
         />
