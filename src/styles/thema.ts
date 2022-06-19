@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { url } from "inspector";
 
 export const thema = extendTheme({
   fonts: {
@@ -13,8 +14,8 @@ export const thema = extendTheme({
   components: {
     Heading: {
       variants: {
-        primary: { fontSize: "4rem", fontWeight: "400", color: "#ffff" },
-        secondary: { fontSize: "2rem", fontWeight: "500", color: "##ffff" },
+        primary: { fontSize: "3rem", fontWeight: "400", color: "#ffff" },
+        secondary: { fontSize: "2rem", fontWeight: "400", color: "##ffff" },
         mobile: { fontSize: "2.3rem", fontWeight: "400", color: "#ffff" },
       },
     },
@@ -25,7 +26,8 @@ export const thema = extendTheme({
           color: "#EA98F7",
           fontSize: "1.5rem",
           fontWeight: "400",
-          borderBottom: "1px solid #F998EF"
+          borderBottom: "1px solid #F998EF",
+          _hover:{color:"#ff4d6d",borderBottom: "1px solid #ff4d6d",}
         },
       },
     },

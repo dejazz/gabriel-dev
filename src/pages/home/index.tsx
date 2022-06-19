@@ -14,16 +14,27 @@ export const HomePage = () => {
       justify={["", "", "flex-start", "center"]}
     >
       <MenuMobile />
+      <Flex>
+        <MenuDeskTop />
+      </Flex>
       <Flex
         w="100%"
-        maxW="1200px"
-        h={["","","100%"]}
+        maxW="1100px"
+        h={["", "", "100%"]}
+        direction="column"
         align={["center", "center", ""]}
-        justify={["center", "center", "", "space-between"]}
+        justify={["center", "center", "", "center"]}
       >
-        <HomeContent />
-        <ImageHome />
-        <MenuDeskTop />
+        <Flex
+          w="100%"
+          maxW="1100px"
+          h={["", "", "100%"]}
+          align={["center", "center", ""]}
+          justify={["center", "center", "", "center"]}
+        >
+          <HomeContent />
+          <ImageHome />
+        </Flex>
       </Flex>
     </Flex>
   );

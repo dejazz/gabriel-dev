@@ -1,5 +1,7 @@
+
 import { AnimatePresence } from "framer-motion";
 import { Route, Switch } from "react-router-dom";
+import { ContactPage } from "../pages/contact";
 import { HomePage } from "../pages/home";
 
 export const Routers = () => {
@@ -7,8 +9,12 @@ export const Routers = () => {
     <AnimatePresence>
       <Switch>
         <Route exact path="/">
-          <HomePage />
+          <HomePage  />
         </Route>
+        <Route exact path="/contato">
+          <ContactPage/>
+        </Route>
+      
       </Switch>
     </AnimatePresence>
   );

@@ -1,11 +1,12 @@
-import { Image } from "@chakra-ui/react";
+import {Image } from "@chakra-ui/react";
 
 export const ImageHome = () => {
   return (
     <>
       <Image
-        width={["", "", "500px", ""]}
-        height={["", "", "100%"]}
+        width={["", "", "70%"]}
+        height={["", "", "70%"]}
+        maxW={["", "", "600px"]}
         maxH={["", "", "600px"]}
         display={["none", "none", "flex", "none"]}
         src={require("../../imgs/Planet.png")}
@@ -13,15 +14,14 @@ export const ImageHome = () => {
       />
 
       <Image
-        position="absolute"
         zIndex="-1"
-        width={["", "", "", "70%"]}
+        width={["", "", "", "100%"]}
         height={["", "", "100%"]}
-        maxW={["", "", "800px"]}
-        maxH={["", "", "800px"]}
+        maxW={["", "", "500px"]}
+        maxH={["", "", "500px"]}
         display={["none", "none", "none", "flex"]}
         src={require("../../imgs/centerPlanet.png")}
-        alt="Planet"
+        alt="Planet"       
       />
     </>
   );
