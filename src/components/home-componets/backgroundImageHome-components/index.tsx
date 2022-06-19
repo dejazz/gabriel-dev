@@ -25,15 +25,14 @@ export const ImageHome = () => {
         width="100%"
         display={["none", "none", "none", "flex"]}
         animate={{
-          scale: [1, 1, 1, 1, 1],
-          rotate: [0, 360],
+          scale: [1, 1.1, 1.1, 1, 1],
+          rotate: [0, 180, 360],
         }}
         // @ts-ignore no problem in operation, although type error appears.
         transition={{
-          duration: 20,
+          duration: 30,
           ease: "easeInOut",
-          repeat: Infinity,
-          
+          repeat: Infinity,          
         }}
       >
         <Image
