@@ -1,5 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
-import { url } from "inspector";
+
 
 export const thema = extendTheme({
   fonts: {
@@ -37,6 +37,7 @@ export const thema = extendTheme({
     global: {
       body: {
         background: "#1E1E1E",
+        backgroundIMage: "url('../../components/imgs/backgroundStars.gif')",
         color: "#ffff",
       },
     },
