@@ -38,8 +38,6 @@ export const thema = extendTheme({
         background: "#1E1E1E",
         backgroundImage: "url('https://i.gifer.com/Ir4.gif')",
         color: "#ffff",
-       
-
         backgroundPosition: " center",
         backgroundSize: "cover",
       },

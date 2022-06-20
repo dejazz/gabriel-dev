@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-      <ChakraProvider theme={thema}>
+      <ChakraProvider theme={thema} resetCSS>
     <BrowserRouter>
         <App />
     </BrowserRouter>

@@ -1,11 +1,17 @@
 import { Flex } from "@chakra-ui/react";
-import { MenuDeskTop } from "../../components/global/menuDeskTop";
-import { MenuMobile } from "../../components/global/menuMobile";
-
+import { Header } from "../../components/header-components";
 import { ProjectsList } from "../../components/projects-components/projectsList-components";
+import { motion } from "framer-motion";
+
 
 export const ProjectsPage = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.7 }}
+    >
     <Flex
       direction="column"
       w="100vw"
@@ -14,10 +20,7 @@ export const ProjectsPage = () => {
       justify={["", "", "flex-start", "center"]}
       overflow="hidden"
     >
-      <MenuMobile />
-      <Flex>
-        <MenuDeskTop />
-      </Flex>
+      <Header />
       <Flex
         w="100%"
         maxW="1100px"
@@ -30,25 +33,25 @@ export const ProjectsPage = () => {
           w="100%"
           maxW="1100px"
           height="100%"
-          maxH={["500px","550px","790px"]}
+          maxH={["500px", "550px", "790px"]}
           h={["", "", "100%"]}
-          justify={["","","center"]}
-            overflow="auto"
-            sx={{
-                '&::-webkit-scrollbar': {
-                  width: '16px',
-                  borderRadius: '8px',
-                  backgroundColor: `rgba(0, 0, 0, 0.05)`,
-                },
-                '&::-webkit-scrollbar-thumb': {
-                  backgroundColor: `rgba(0, 0, 0, 0.05)`,
-                },
-              }}
-         
+          justify={["", "", "center"]}
+          overflow="auto"
+          sx={{
+            "&::-webkit-scrollbar": {
+              width: "16px",
+              borderRadius: "8px",
+              backgroundColor: `rgba(0, 0, 0, 0.05)`,
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: `rgba(0, 0, 0, 0.05)`,
+            },
+          }}
         >
           <ProjectsList />
         </Flex>
       </Flex>
     </Flex>
+    </motion.div>
   );
 };

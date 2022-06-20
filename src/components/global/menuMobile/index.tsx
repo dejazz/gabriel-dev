@@ -16,7 +16,7 @@ export const MenuMobile = () => {
   const history = useHistory();
   return (
     <Flex alignSelf={"flex-end"}>
-      <Menu>
+      <Menu >
         <MenuButton
           as={IconButton}
           aria-label="Options"
@@ -27,14 +27,15 @@ export const MenuMobile = () => {
           display={["flex", "flex", "flex", "none"]}
           border="none"
           m="3rem"
-          _hover={{ background: "#000000" }}
-          _selected={{ background: "#000000" }}
+          colorScheme="whiteAlpha"
+       
         />
         <MenuList bg={"#1E1E1E"} color="#ffff">
           {infosMenu.map((item, index) => (
             <MenuItem
+            _hover={{background:"#101010"}}
               key={index}
-              _hover={{ background: "#000000" }}
+            
               onClick={() =>
                 history.push(`/${item === "Home" ? "" : item.toLowerCase()}`)
               }

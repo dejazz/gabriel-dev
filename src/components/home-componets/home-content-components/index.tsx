@@ -12,7 +12,7 @@ export const HomeContent = () => {
       <Heading variant={["mobile", "primary", "primary"]} mb="2rem">
         &#60;Gabriel/Dev&#62;
       </Heading>
-      <Flex align="center" direction={["column","column","row"]}>
+      <Flex align="center" direction={["column", "column", "row"]}>
         <Avatar
           width="100px"
           height="100px"
@@ -27,11 +27,11 @@ export const HomeContent = () => {
           textAlign="justify"
         >
           {"    "}
-          Entusiasta de tecnologia e apaixonado por aprender, acredito que
-          devemos aproveitar para aprender cada vez mais sempre que pudermos.
-          Dito isto, estou ingressando na carreira de tecnologia afim de
-          adquirir mais conhecimentos e experiências e encontrar soluções para
-          os problemas.”
+          Sou um administrador mudando para área que sempre gostei. Gosto muito da
+          tecnologia e sou apaixonado por aprender, acredito que devemos aproveitar
+          para aprender cada vez mais sempre que pudermos. Dito isto, estou
+          ingressando na carreira de tecnologia afim de adquirir mais
+          conhecimentos e experiências e encontrar soluções para os problemas.”
         </Text>
       </Flex>
     </Flex>

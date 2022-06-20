@@ -1,11 +1,18 @@
 import { Flex } from "@chakra-ui/react";
 import { ContactContent } from "../../components/contact-components/contacts-content-components";
-import { MenuDeskTop } from "../../components/global/menuDeskTop";
-import { MenuMobile } from "../../components/global/menuMobile";
+import { Header } from "../../components/header-components";
 import { ImageHome } from "../../components/home-componets/backgroundImageHome-components";
+import { motion } from "framer-motion";
+
 
 export const ContactPage = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.7 }}
+    >
     <Flex
       direction="column"
       w="100vw"
@@ -13,10 +20,7 @@ export const ContactPage = () => {
       align={["center", "center", ""]}
       justify={["", "", "flex-start", "center"]}
     >
-      <MenuMobile />
-      <Flex>
-        <MenuDeskTop />
-      </Flex>
+      <Header/>
       <Flex
         w="100%"
         maxW="1100px"
@@ -37,5 +41,6 @@ export const ContactPage = () => {
         </Flex>
       </Flex>
     </Flex>
+    </motion.div>
   );
 };

@@ -37,12 +37,10 @@ export const ImageHome = () => {
         }}
       >
         <Image
-          zIndex="-1"
           width={["", "", "", "100%"]}
           height={["", "", "100%"]}
           maxW={["", "", "500px"]}
-          maxH={["", "", "500px"]}
-         
+          maxH={["", "", "500px"]}        
           src={require("../../imgs/centerPlanet.png")}
           alt="Planet"
         />
