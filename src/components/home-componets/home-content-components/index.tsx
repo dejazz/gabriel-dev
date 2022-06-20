@@ -9,8 +9,8 @@ export const HomeContent = () => {
       w="100%"
       ml={["", "1rem", "2rem"]}
     >
-      <Heading variant={["mobile", "primary", "primary"]} mb="2rem">
-        &#60;Gabriel/Dev&#62;
+      <Heading textAlign="center" variant={["mobile", "primary", "primary"]} mb="2rem">
+        &#60;Gabriel Schneider&#62;
       </Heading>
       <Flex align="center" direction={["column", "column", "row"]}>
         <Avatar

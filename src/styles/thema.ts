@@ -15,7 +15,7 @@ export const thema = extendTheme({
       variants: {
         primary: { fontSize: "3rem", fontWeight: "400", color: "#ffff" },
         secondary: { fontSize: "2rem", fontWeight: "400", color: "##ffff" },
-        mobile: { fontSize: "2.3rem", fontWeight: "400", color: "#ffff" },
+        mobile: { fontSize: "2rem", fontWeight: "400", color: "#ffff" },
       },
     },
     Text: {

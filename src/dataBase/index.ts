@@ -29,7 +29,7 @@ export const projects = [
     name: "Gym Api",
     gitHub: "https://github.com/dejazz/api-first-gym",
     prod: false,
-    description:"Api feita para dar um auxilio aos alunos e academia",
+    description:"Api feita para dar um auxílio na hora do instrutor marcar os treinos de seus alunos na academia.",
     img: "https://i.pinimg.com/564x/8a/f3/74/8af37433403d3c9c4c9acbf610641707.jpg",
     tecnology: ["Javascript", "Node.js", "Express", "MongoDB"],
   },

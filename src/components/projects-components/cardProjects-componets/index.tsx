@@ -1,4 +1,4 @@
-import { Flex, Heading, Image } from "@chakra-ui/react";
+import { Flex, Heading, Image, Spinner } from "@chakra-ui/react";
 import { ModalProjects } from "../modalProjects-components";
 
 interface ItemCard {
@@ -16,22 +16,26 @@ export interface CardData {
 export const CardProjects = ({ project }: CardData) => {
   return (
     <Flex
-      
       direction={["column", "column", "row"]}
       justify="center"
       align="center"
       mb="1rem"
     >
-      <Image
-        borderRadius="0.5rem"
-        width="100%"
-        height="100%"
-        maxW="400px"
-        maxH="300px"
-        src={project.img}
-        alt={project.name}
-      />
+      {project.img ? (
+        <Image
+          borderRadius="0.5rem"
+          width="100%"
+          height="100%"
+          maxW="400px"
+          maxH="200px"
+          src={project.img}
+          alt={project.name}
+        />
+      ) : (
+        <Spinner size={"xl"} color="red.500" />
+      )}
       <Flex
+        borderRadius="0.5rem"
         width="100%"
         height="100%"
         maxW="400px"
@@ -39,7 +43,7 @@ export const CardProjects = ({ project }: CardData) => {
         direction="column"
         justify="center"
         align="center"
-        ml="2rem"
+        background="#101010"
       >
         <Heading>{project.name}</Heading>
         <ModalProjects project={project} />

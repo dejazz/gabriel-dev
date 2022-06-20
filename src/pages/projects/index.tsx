@@ -33,10 +33,11 @@ export const ProjectsPage = () => {
           w="100%"
           maxW="1100px"
           height="100%"
-          maxH={["500px", "550px", "790px"]}
+          maxH={["600px", "750px", "850px"]}
           h={["", "", "100%"]}
           justify={["", "", "center"]}
           overflow="auto"
+          mt="1rem"
           sx={{
             "&::-webkit-scrollbar": {
               width: "16px",
