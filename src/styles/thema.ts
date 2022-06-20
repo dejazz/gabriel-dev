@@ -36,7 +36,7 @@ export const thema = extendTheme({
     global: {
       body: {
         background: "#1E1E1E",
-        backgroundImage: "url('https://i.pinimg.com/564x/3c/9a/54/3c9a5469338bc2c29fb1783cd3f3f3fd.jpg')",
+        backgroundImage: "url('https://i.gifer.com/Ir4.gif')",
         color: "#ffff",
        
 

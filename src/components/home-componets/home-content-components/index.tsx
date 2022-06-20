@@ -12,12 +12,12 @@ export const HomeContent = () => {
       <Heading variant={["mobile", "primary", "primary"]} mb="2rem">
         &#60;Gabriel/Dev&#62;
       </Heading>
-      <Flex align="center" >
+      <Flex align="center" direction={["column","column","row"]}>
         <Avatar
           width="100px"
           height="100px"
           src="https://github.com/dejazz.png"
-          mr="2rem"
+          m="2rem"
         />
         <Text
           variant={"primary"}
