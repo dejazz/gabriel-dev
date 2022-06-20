@@ -1,4 +1,4 @@
-import { Button, Flex, Text } from "@chakra-ui/react";
+import { Button, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export const MenuDeskTop = () => {
@@ -8,6 +8,7 @@ export const MenuDeskTop = () => {
     <Flex display={["none", "none", "none", "flex"]} m="2rem">
       {infosMenu.map((item, index) => (
         <Button
+          key={index}
           as={Link}
           to={`/${item === "Sobre mim" ? "" : item.toLowerCase()}`}
           ml="1rem"
