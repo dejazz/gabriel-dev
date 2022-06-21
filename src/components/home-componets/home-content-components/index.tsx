@@ -9,7 +9,7 @@ export const HomeContent = () => {
       w="100%"
       ml={["", "1rem", "2rem"]}
     >
-      <Heading textAlign="center" variant={["mobile", "primary", "primary"]} mb="2rem">
+      <Heading colorScheme={'whiteAlpha'} textAlign="center" variant={["mobile", "primary", "primary"]} mb="2rem">
         &#60;Gabriel Schneider&#62;
       </Heading>
       <Flex align="center" direction={["column", "column", "row"]}>
@@ -34,6 +34,7 @@ export const HomeContent = () => {
           conhecimentos e experiências e encontrar soluções para os problemas.”
         </Text>
       </Flex>
+      
     </Flex>
   );
 };

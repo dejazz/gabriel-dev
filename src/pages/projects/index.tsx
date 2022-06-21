@@ -3,7 +3,6 @@ import { Header } from "../../components/header-components";
 import { ProjectsList } from "../../components/projects-components/projectsList-components";
 import { motion } from "framer-motion";
 
-
 export const ProjectsPage = () => {
   return (
     <motion.div
@@ -12,47 +11,49 @@ export const ProjectsPage = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1.7 }}
     >
-    <Flex
-      direction="column"
-      w="100vw"
-      h="100vh"
-      align={["center", "center", ""]}
-      justify={["", "", "flex-start", "center"]}
-      overflow="hidden"
-    >
-      <Header />
       <Flex
-        w="100%"
-        maxW="1100px"
-        h={["", "", "100%"]}
-        direction={"column"}
+        direction="column"
+        w="100vw"
+        h="100vh"
         align={["center", "center", ""]}
-        justify={["center", "center", "", "center"]}
+        justify={["", "", "flex-start", "center"]}
+        overflow="hidden"
       >
+        <Header />
         <Flex
           w="100%"
           maxW="1100px"
-          height="100%"
-          maxH={["600px", "750px", "850px"]}
           h={["", "", "100%"]}
-          justify={["", "", "center"]}
-          overflow="auto"
-          mt="1rem"
-          sx={{
-            "&::-webkit-scrollbar": {
-              width: "16px",
-              borderRadius: "8px",
-              backgroundColor: `rgba(0, 0, 0, 0.05)`,
-            },
-            "&::-webkit-scrollbar-thumb": {
-              backgroundColor: `rgba(0, 0, 0, 0.05)`,
-            },
-          }}
+          direction={"column"}
+          align={["center", "center", ""]}
+          justify={["center", "center", "", "center"]}
         >
-          <ProjectsList />
+          <Flex
+            w="100%"
+            maxW="1100px"
+            height="100%"
+            maxH={["600px", "750px", "850px"]}
+            h={["", "", "100%"]}
+            justify={["", "", "center"]}
+            overflow="auto"
+            mt="1rem"
+            sx={{
+              "&::-webkit-scrollbar": {
+                width: "16px",
+                borderRadius: "8px",
+                backgroundColor: `rgba(0, 0, 0, 0.05)`,
+              },
+              "&::-webkit-scrollbar-thumb": {
+                backgroundColor: `rgba(0, 0, 0, 0.05)`,
+              },
+            }}
+          >
+            <ProjectsList />
+            
+             
+          </Flex>
         </Flex>
       </Flex>
-    </Flex>
     </motion.div>
   );
 };

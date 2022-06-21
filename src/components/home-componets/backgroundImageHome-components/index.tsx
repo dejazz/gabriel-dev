@@ -1,12 +1,9 @@
-import { chakra, Image } from "@chakra-ui/react";
+import { chakra,  Image } from "@chakra-ui/react";
 import { isValidMotionProp, motion } from "framer-motion";
+
 
 export const ImageHome = () => {
   const ChakraBox = chakra(motion.div, {
-    /**
-     * Allow motion props and the children prop to be forwarded.
-     * All other chakra props not matching the motion props will still be forwarded.
-     */
     shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === "children",
   });
   return (
@@ -37,6 +34,7 @@ export const ImageHome = () => {
         }}
       >
         <Image
+        zIndex={-100}
           width={["", "", "", "100%"]}
           height={["", "", "100%"]}
           maxW={["", "", "500px"]}
@@ -45,6 +43,7 @@ export const ImageHome = () => {
           alt="Planet"
         />
       </ChakraBox>
+     
     </>
   );
 };

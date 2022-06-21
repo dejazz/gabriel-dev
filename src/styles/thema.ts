@@ -1,5 +1,4 @@
 import { extendTheme } from "@chakra-ui/react";
-
 export const thema = extendTheme({
   fonts: {
     heading: "Inter",
@@ -36,7 +35,8 @@ export const thema = extendTheme({
     global: {
       body: {
         background: "#1E1E1E",
-        backgroundImage: "url('https://i.gifer.com/Ir4.gif')",
+        backgroundImage:
+          "url('https://images.wallpaperscraft.com/image/single/starry_sky_clouds_sunset_120716_1920x1080.jpg')",
         color: "#ffff",
         backgroundPosition: " center",
         backgroundSize: "cover",

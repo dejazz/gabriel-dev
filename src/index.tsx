@@ -1,8 +1,12 @@
-import "@fontsource/inter"
+import "@fontsource/inter";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { ChakraProvider } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  ColorModeProvider,
+  ThemeProvider,
+} from "@chakra-ui/react";
 import { thema } from "./styles/thema";
 import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(
@@ -10,10 +14,14 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <ThemeProvider theme={thema}>
       <ChakraProvider theme={thema} resetCSS>
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+        <ColorModeProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ColorModeProvider>
       </ChakraProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
