@@ -18,8 +18,8 @@ export const projects = [
   },
   {
     name: "Destoq CRM",
-    gitHub: "https://github.com/dejazz/projeto_relogio",
-    prod: "destoq-capstonem3.vercel.app",
+    gitHub: "https://github.com/distoq/DesToq_capstoneM3",
+    prod: " https://destoq-capstonem3.vercel.app",
     description:
       "DEStoq foi idealizado para descomplicar o gerenciamento de micro e pequenas empresas, trazendo soluções integradas para cadastro e controle de matérias-primas e produtos finais, relatórios sobre entradas e saídas, cadastro de fornecedores, emissão de novos pedidos para clientes internos e externos, entre outras funcionalidades.",
     img: "https://i.imgur.com/2NYYff2.png",

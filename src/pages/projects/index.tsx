@@ -15,9 +15,10 @@ export const ProjectsPage = () => {
         direction="column"
         w="100vw"
         h="100vh"
-        align={["center", "center", ""]}
+        align={["center", "center", "center"]}
         justify={["", "", "flex-start", "center"]}
         overflow="hidden"
+   
       >
         <Header />
         <Flex
@@ -28,11 +29,12 @@ export const ProjectsPage = () => {
           align={["center", "center", ""]}
           justify={["center", "center", "", "center"]}
         >
+          
           <Flex
             w="100%"
             maxW="1100px"
             height="100%"
-            maxH={["600px", "750px", "850px"]}
+            maxH={["600px", "750px", "700px"]}
             h={["", "", "100%"]}
             justify={["", "", "center"]}
             overflow="auto"

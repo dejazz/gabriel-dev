@@ -18,6 +18,7 @@ export const HomePage = () => {
         h="100vh"
         align={["center", "center", ""]}
         justify={["", "", "flex-start", "center"]}
+        overflow="hidden"
       >
         <Header />
 
