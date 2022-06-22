@@ -11,16 +11,23 @@ export const ProjectsPage = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1.7 }}
     >
+      <Flex direction="column"
+        w="100vw"
+        h="100vh"
+        align={["center", "center", "center"]}
+        justify={["", "", "flex-start", "center"]}
+        overflow="hidden">
+      <Header/>
       <Flex
         direction="column"
         w="100vw"
-        h="100vh"
+        h="99vh"
         align={["center", "center", "center"]}
         justify={["", "", "flex-start", "center"]}
         overflow="hidden"
    
       >
-        <Header />
+        
         <Flex
           w="100%"
           maxW="1100px"
@@ -55,6 +62,7 @@ export const ProjectsPage = () => {
              
           </Flex>
         </Flex>
+      </Flex>
       </Flex>
     </motion.div>
   );

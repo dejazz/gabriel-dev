@@ -26,8 +26,8 @@ export const CardProjects = ({ project }: CardData) => {
           borderRadius="0.5rem"
           width="100%"
           height="100%"
-          maxW="400px"
-          maxH="200px"
+          maxW="300px"
+          maxH="150px"
           src={project.img}
           alt={project.name}
         />
@@ -38,8 +38,8 @@ export const CardProjects = ({ project }: CardData) => {
         borderRadius="0.5rem"
         width="100%"
         height="100%"
-        maxW="400px"
-        maxH="300px"
+        maxW="300px"
+        maxH="150px"
         direction="column"
         justify="center"
         align="center"

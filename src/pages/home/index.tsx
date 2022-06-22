@@ -17,28 +17,36 @@ export const HomePage = () => {
         w="100vw"
         h="100vh"
         align={["center", "center", ""]}
-        justify={["", "", "flex-start", "center"]}
+        justify={["", "", "flex-start", ""]}
         overflow="hidden"
       >
         <Header />
-
         <Flex
-          w="100%"
-          maxW="1100px"
-          h={["", "", "100%"]}
           direction="column"
+          w="100vw"
+          h="100vh"
           align={["center", "center", ""]}
-          justify={["center", "center", "", "center"]}
+          justify={["", "", "flex-start", "center"]}
+          overflow="hidden"
         >
           <Flex
             w="100%"
             maxW="1100px"
             h={["", "", "100%"]}
+            direction="column"
             align={["center", "center", ""]}
             justify={["center", "center", "", "center"]}
           >
-            <HomeContent />
-            <ImageHome />
+            <Flex
+              w="100%"
+              maxW="1100px"
+              h={["", "", "100%"]}
+              align={["center", "center", ""]}
+              justify={["center", "center", "", "center"]}
+            >
+              <HomeContent />
+              <ImageHome />
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
