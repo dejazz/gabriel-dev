@@ -1,5 +1,6 @@
 export const projects = [
-  {
+  { 
+    id:1,
     name: "Torre de Haroi",
     gitHub: "https://github.com/dejazz/game-torre-haroi",
     prod: "https://game-torre-haroi.vercel.app/",
@@ -8,6 +9,7 @@ export const projects = [
     tecnology: ["Javascript", "HTML", "CSS"],
   },
   {
+    id:2,
     name: "Relógio Web",
     gitHub: "https://github.com/dejazz/projeto_relogio",
     prod: "https://projeto-relogio-gabrielsch.vercel.app/",
@@ -17,6 +19,7 @@ export const projects = [
     tecnology: ["Javascript", "HTML", "CSS"],
   },
   {
+    id:3,
     name: "Destoq CRM",
     gitHub: "https://github.com/distoq/DesToq_capstoneM3",
     prod: " https://destoq-capstonem3.vercel.app",
@@ -26,6 +29,7 @@ export const projects = [
     tecnology: ["React", "ChakraUI"],
   },
   {
+    id:4,
     name: "Gym Api",
     gitHub: "https://github.com/dejazz/api-first-gym",
     prod: false,

@@ -3,6 +3,7 @@ import { Header } from "../../components/header-components";
 import { ImageHome } from "../../components/home-componets/backgroundImageHome-components";
 import { HomeContent } from "../../components/home-componets/home-content-components";
 import { motion } from "framer-motion";
+import { ProjectsList } from "../../components/projects-components/projectsList-components";
 
 export const HomePage = () => {
   return (
@@ -28,6 +29,17 @@ export const HomePage = () => {
           align={["center", "center", ""]}
           justify={["", "", "flex-start", "center"]}
           overflow="hidden"
+          overflowY="auto"
+          sx={{
+            "&::-webkit-scrollbar": {
+              width: "16px",
+              borderRadius: "8px",
+              backgroundColor: `rgba(0, 0, 0, 0.05)`,
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: `rgba(0, 0, 0, 0.05)`,
+            },
+          }}
         >
           <Flex
             w="100%"
@@ -36,16 +48,20 @@ export const HomePage = () => {
             direction="column"
             align={["center", "center", ""]}
             justify={["center", "center", "", "center"]}
+            mt={["","","24rem"]}
           >
             <Flex
               w="100%"
               maxW="1100px"
-              h={["", "", "100%"]}
+      
               align={["center", "center", ""]}
               justify={["center", "center", "", "center"]}
             >
               <HomeContent />
               <ImageHome />
+            </Flex>
+            <Flex direction="column"  h="100%" maxH="800px" w="100%">
+            <ProjectsList />
             </Flex>
           </Flex>
         </Flex>

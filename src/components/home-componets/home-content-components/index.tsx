@@ -10,7 +10,7 @@ export const HomeContent = () => {
       ml={["", "1rem", "2rem"]}
     >
       <Heading colorScheme={'whiteAlpha'} textAlign="center" variant={["mobile", "primary", "primary"]} mb="2rem">
-        &#60;Gabriel Schneider&#62;
+        &#60;Gabriel Schneider/&#62;
       </Heading>
       <Flex align="center" direction={["column", "column", "row"]}>
         <Avatar

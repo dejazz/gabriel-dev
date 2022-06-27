@@ -40,9 +40,9 @@ export const ModalProjects = ({ project }: CardData) => {
     <>
       <Button
         rightIcon={<ArrowForwardIcon />}
-        mt="1rem"
-        colorScheme="whiteAlpha"
-        variant="outline"
+        m="1rem"
+        colorScheme="pink"
+       
         onClick={onOpen}
       >
         Ver mais
@@ -50,7 +50,7 @@ export const ModalProjects = ({ project }: CardData) => {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent bg="#323131c9">
+        <ModalContent bg="#323131">
           <ModalHeader>{project.name}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>

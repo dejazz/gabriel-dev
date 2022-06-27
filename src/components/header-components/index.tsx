@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <Flex
       w="100vw"
-      h="150px"
+      h="80px"
       align="center"
       justify={["space-around"]}
       bg={"#101010"}

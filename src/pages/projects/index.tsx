@@ -11,58 +11,56 @@ export const ProjectsPage = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1.7 }}
     >
-      <Flex direction="column"
+      <Flex
+        direction="column"
         w="100vw"
         h="100vh"
         align={["center", "center", "center"]}
         justify={["", "", "flex-start", "center"]}
-        overflow="hidden">
-      <Header/>
-      <Flex
-        direction="column"
-        w="100vw"
-        h="99vh"
-        align={["center", "center", "center"]}
-        justify={["", "", "flex-start", "center"]}
-        overflow="hidden"
-   
       >
-        
+        <Header />
         <Flex
-          w="100%"
-          maxW="1100px"
-          h={["", "", "100%"]}
-          direction={"column"}
-          align={["center", "center", ""]}
-          justify={["center", "center", "", "center"]}
+          direction="column"
+          w="100vw"
+          h="99vh"
+          align={["center", "center", "center"]}
+          justify={["", "", "flex-start", "center"]}
+          overflow="hidden"
+          overflowY="auto"
+          sx={{
+            "&::-webkit-scrollbar": {
+              width: "16px",
+              borderRadius: "8px",
+              backgroundColor: `rgba(0, 0, 0, 0.05)`,
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: `rgba(0, 0, 0, 0.05)`,
+            },
+          }}
         >
-          
           <Flex
             w="100%"
             maxW="1100px"
-            height="100%"
-            maxH={["600px", "750px", "700px"]}
             h={["", "", "100%"]}
-            justify={["", "", "center"]}
-            overflow="auto"
-            mt="1rem"
-            sx={{
-              "&::-webkit-scrollbar": {
-                width: "16px",
-                borderRadius: "8px",
-                backgroundColor: `rgba(0, 0, 0, 0.05)`,
-              },
-              "&::-webkit-scrollbar-thumb": {
-                backgroundColor: `rgba(0, 0, 0, 0.05)`,
-              },
-            }}
+            direction={"column"}
+            align={["center", "center", ""]}
+            justify={["center", "center", "", "center"]}
           >
-            <ProjectsList />
-            
-             
+            <Flex
+              w="100%"
+              maxW="1100px"
+              height="100%"
+              maxH={["600px", "750px", "900px"]}
+              h={["", "", "100%"]}
+              justify={["", "", "center"]}
+              
+              mt="1rem"
+              
+            >
+              <ProjectsList />
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
       </Flex>
     </motion.div>
   );
