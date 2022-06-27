@@ -18,7 +18,7 @@ export const ProjectsPage = () => {
         align={["center", "center", "center"]}
         justify={["", "", "flex-start", "center"]}
       >
-        <Header />
+        <Header home={false}/>
         <Flex
           direction="column"
           w="100vw"

@@ -8,11 +8,12 @@ import {
 } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Iheader } from "../../header-components";
 
 
 
-export const MenuMobile = () => {
-  const infosMenu = ["Home", "Projetos", "Contato"];
+export const MenuMobile = ({home}:Iheader) => {
+  const infosMenu = ["Home","Sobre mim", "Projetos", "Contato"];
   const history = useHistory();
   return (
     <Flex alignSelf={"flex-end"}>
@@ -35,9 +36,10 @@ export const MenuMobile = () => {
             <MenuItem
             _hover={{background:"#101010"}}
               key={index}
-            
+              disabled={home && item === "Home" ? true : false}
+              display={home && item === "Home" ? 'none' : 'flex'}
               onClick={() =>
-                history.push(`/${item === "Home" ? "" : item.toLowerCase()}`)
+                history.push(`/${item === "Home" ? "" : item.toLowerCase().trim()}`)
               }
             >
               {item}

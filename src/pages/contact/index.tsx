@@ -20,7 +20,7 @@ export const ContactPage = () => {
         justify={["", "", "flex-start", "center"]}
         overflow="hidden"
       >
-        <Header />
+        <Header home={false}/>
         <Flex
           direction="column"
           w="100vw"

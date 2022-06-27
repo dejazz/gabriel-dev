@@ -2,7 +2,7 @@ import { extendTheme } from "@chakra-ui/react";
 export const thema = extendTheme({
   fonts: {
     heading: "Jura",
-    body: "Inter",
+    body: "Jura",
   },
   colors: {
     primary: "#101010",
@@ -19,7 +19,7 @@ export const thema = extendTheme({
     },
     Text: {
       variants: {
-        primary: { fontSize: "16px", fontWeight: "400", color: "#ffff" },
+        primary: { fontSize: "20px", fontWeight: "400", color: "#ffff" },
         link: {
           color: "#EA98F7",
           fontSize: "1.5rem",

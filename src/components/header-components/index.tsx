@@ -3,7 +3,10 @@ import { useHistory } from "react-router-dom";
 import { MenuDeskTop } from "../global/menuDeskTop";
 import { MenuMobile } from "../global/menuMobile";
 
-export const Header = () => {
+export interface Iheader{
+  home: boolean
+}
+export const Header = ({home}:Iheader) => {
   const history = useHistory();
   return (
     <Flex
@@ -22,8 +25,8 @@ export const Header = () => {
         >
           &#60;Gabriel/Dev&#62;
         </Heading>
-        <MenuMobile />
-        <MenuDeskTop />
+        <MenuMobile home={home} />
+        <MenuDeskTop home={home}/>
       </Flex>
     </Flex>
   );

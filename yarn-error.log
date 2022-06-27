@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn add @types/lottie-react
+  /usr/bin/node /usr/bin/yarn add @types/typewriter-effect
 
 PATH: 
   /home/gabriel/.cache/cloud-code/installer/google-cloud-sdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/gabriel/Android/Sdk/emulator:/home/gabriel/Android/Sdk/tools:/home/gabriel/Android/Sdk/tools/bin:/home/gabriel/Android/Sdk/platform-tools:/home/gabriel/android-studio/bin:/home/gabriel/Android/Sdk/tools:/home/gabriel/Android/Sdk/platform-tools:/home/gabriel/Android/Sdk/emulator:/home/gabriel/Android/Sdk/tools:/home/gabriel/Android/Sdk/tools/bin:/home/gabriel/Android/Sdk/platform-tools:/home/gabriel/android-studio/bin:/home/gabriel/Android/Sdk/tools:/home/gabriel/Android/Sdk/platform-tools:/home/gabriel/Android/Sdk/emulator:/home/gabriel/Android/Sdk/tools:/home/gabriel/Android/Sdk/tools/bin:/home/gabriel/Android/Sdk/platform-tools:/home/gabriel/android-studio/bin:/home/gabriel/Android/Sdk/tools:/home/gabriel/Android/Sdk/platform-tools
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2flottie-react: Not found
+  Error: https://registry.yarnpkg.com/@types%2ftypewriter-effect: Not found
       at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:67029:18)
       at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140883:22)
       at Request.emit (events.js:400:28)
@@ -36,16 +36,20 @@ npm manifest:
       "@chakra-ui/react": "^2.2.1",
       "@emotion/react": "^11",
       "@emotion/styled": "^11",
+      "@fontsource/ibm-plex-mono": "^4.5.10",
       "@fontsource/inter": "^4.5.11",
+      "@fontsource/jura": "^4.5.10",
       "@testing-library/jest-dom": "^5.14.1",
       "@testing-library/react": "^13.0.0",
       "@testing-library/user-event": "^13.2.1",
+      "@types/aos": "^3.0.4",
       "@types/jest": "^27.0.1",
       "@types/node": "^16.7.13",
       "@types/react": "^18.0.0",
       "@types/react-dom": "^18.0.0",
       "@types/react-lottie": "^1.2.6",
       "@types/react-router-dom": "^5.3.3",
+      "aos": "^3.0.0-beta.6",
       "framer-motion": "^6",
       "lottie-react": "^2.3.0",
       "react": "^18.2.0",
@@ -1950,10 +1954,20 @@ Lockfile:
       minimatch "^3.1.2"
       strip-json-comments "^3.1.1"
   
+  "@fontsource/ibm-plex-mono@^4.5.10":
+    version "4.5.10"
+    resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-mono/-/ibm-plex-mono-4.5.10.tgz#25d004646853bf46b3787341300662fe61f8ad78"
+    integrity sha512-YmyewD+qHgo4ylcNSg6T9zpneRS34HhFd8cpF2TrJMbM3iKOW59XwmZqzdKyctzU0UQoHUFzjAAzDJ4THElFRA==
+  
   "@fontsource/inter@^4.5.11":
     version "4.5.11"
     resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.11.tgz#3c45014821e8c82b247a291f1944dd2764a2d1ed"
     integrity sha512-toizzQkfXL8YJcG/f8j3EYXYGQe4OxiDEItThSigvHU+cYNDw8HPp3wLYQX745hddsnHqOGCM4exitFSBOU8+w==
+  
+  "@fontsource/jura@^4.5.10":
+    version "4.5.10"
+    resolved "https://registry.yarnpkg.com/@fontsource/jura/-/jura-4.5.10.tgz#b63c8c30f1143720b80284938056509fdc9749a3"
+    integrity sha512-CPSWSe7waeyax2DS/BSKuBJO3FoINAjxHl0e8G/xj58vaqU/eIMR2spM+ZZeZRZ0G7XHYKgGGLqYIIowAZqjOQ==
   
   "@humanwhocodes/config-array@^0.9.2":
     version "0.9.5"
@@ -2517,6 +2531,11 @@ Lockfile:
     version "0.2.0"
     resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
     integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
+  
+  "@types/aos@^3.0.4":
+    version "3.0.4"
+    resolved "https://registry.yarnpkg.com/@types/aos/-/aos-3.0.4.tgz#fd0dce430f18d118081aaced2c79c30617b15818"
+    integrity sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA==
   
   "@types/aria-query@^4.2.0":
     version "4.2.2"
@@ -3273,6 +3292,15 @@ Lockfile:
       normalize-path "^3.0.0"
       picomatch "^2.0.4"
   
+  aos@^3.0.0-beta.6:
+    version "3.0.0-beta.6"
+    resolved "https://registry.yarnpkg.com/aos/-/aos-3.0.0-beta.6.tgz#75148e3be4bb1add53f5a1828623bf82b67691e9"
+    integrity sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw==
+    dependencies:
+      classlist-polyfill "^1.2.0"
+      lodash.debounce "^4.0.8"
+      lodash.throttle "^4.1.1"
+  
   arg@^5.0.2:
     version "5.0.2"
     resolved "https://registry.yarnpkg.com/arg/-/arg-5.0.2.tgz#c81433cc427c92c4dcf4865142dbca6f15acd59c"
@@ -3834,6 +3862,11 @@ Lockfile:
     version "1.2.2"
     resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
     integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
+  
+  classlist-polyfill@^1.2.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
+    integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
   
   clean-css@^5.2.2:
     version "5.3.0"
@@ -6789,6 +6822,11 @@ Lockfile:
     version "4.7.0"
     resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
     integrity sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==
+  
+  lodash.throttle@^4.1.1:
+    version "4.1.1"
+    resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+    integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
   
   lodash.uniq@^4.5.0:
     version "4.5.0"

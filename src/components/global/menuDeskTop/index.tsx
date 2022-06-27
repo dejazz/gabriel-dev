@@ -1,8 +1,9 @@
 import { Button, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { Iheader } from "../../header-components";
 
-export const MenuDeskTop = () => {
-  const infosMenu = ["Sobre mim", "Projetos", "Contato"];
+export const MenuDeskTop = ({ home }: Iheader) => {
+  const infosMenu = ["Home", "Sobre mim", "Projetos", "Contato"];
 
   return (
     <Flex display={["none", "none", "none", "flex"]} m="2rem">
@@ -10,7 +11,9 @@ export const MenuDeskTop = () => {
         <Button
           key={index}
           as={Link}
-          to={`/${item === "Sobre mim" ? "" : item.toLowerCase()}`}
+          disabled={home && item === "Home" ? true : false}
+          display={home && item === "Home" ? 'none' : 'flex'}
+          to={`/${item === "Home" ? "" : item.toLowerCase().trim()}`}
           ml="1rem"
           colorScheme={"pink"}
           sx={{ a: { textDecoration: "none" } }}

@@ -21,7 +21,7 @@ export const HomePage = () => {
         justify={["", "", "flex-start", ""]}
         overflow="hidden"
       >
-        <Header />
+        <Header home />
         <Flex
           direction="column"
           w="100vw"
@@ -48,20 +48,19 @@ export const HomePage = () => {
             direction="column"
             align={["center", "center", ""]}
             justify={["center", "center", "", "center"]}
-            mt={["","","24rem"]}
+            mt={["", "", "24rem"]}
           >
             <Flex
               w="100%"
               maxW="1100px"
-      
               align={["center", "center", ""]}
               justify={["center", "center", "", "center"]}
             >
               <HomeContent />
               <ImageHome />
             </Flex>
-            <Flex direction="column"  h="100%" maxH="800px" w="100%">
-            <ProjectsList />
+            <Flex direction="column" h="100%" maxH="800px" w="100%">
+              <ProjectsList />
             </Flex>
           </Flex>
         </Flex>
