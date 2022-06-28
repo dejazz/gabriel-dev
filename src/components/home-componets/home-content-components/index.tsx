@@ -1,5 +1,6 @@
 import { Avatar, Flex, Heading, Text } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
+import { ImageHome } from "../backgroundImageHome-components";
 
 export const HomeContent = () => {
   return (
@@ -9,6 +10,7 @@ export const HomeContent = () => {
       justify="center"
       w="100%"
       ml={["", "1rem", "2rem"]}
+     
     >
       <Heading
         colorScheme={"whiteAlpha"}
@@ -18,7 +20,13 @@ export const HomeContent = () => {
         &#60;Gabriel Schneider/&#62;
       </Heading>
 
-      <Text color="pink" variant="primary" colorScheme="pink" textAlign="left" mb="2rem">
+      <Text
+        color="pink"
+        variant="primary"
+        colorScheme="pink"
+        textAlign="left"
+        mb="2rem"
+      >
         <Typewriter
           options={{
             strings: ["Desenvolvedor Frontend", "Desenvolvedor Backend"],
@@ -37,7 +45,7 @@ export const HomeContent = () => {
         <Text
           variant={"primary"}
           width="100%"
-          maxW={["17.6rem", "27.8rem"]}
+          maxW={["17.6rem", "30.8rem"]}
           justifyContent={"center"}
           textAlign="justify"
         >
@@ -48,6 +56,7 @@ export const HomeContent = () => {
           estou ingressando na carreira de tecnologia afim de adquirir mais
           conhecimentos e experiências e encontrar soluções para os problemas.”
         </Text>
+      <ImageHome />
       </Flex>
     </Flex>
   );

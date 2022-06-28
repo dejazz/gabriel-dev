@@ -1,6 +1,5 @@
 import { Flex } from "@chakra-ui/react";
 import { Header } from "../../components/header-components";
-import { ImageHome } from "../../components/home-componets/backgroundImageHome-components";
 import { HomeContent } from "../../components/home-componets/home-content-components";
 import { motion } from "framer-motion";
 import { ProjectsList } from "../../components/projects-components/projectsList-components";
@@ -55,9 +54,10 @@ export const HomePage = () => {
               maxW="1100px"
               align={["center", "center", ""]}
               justify={["center", "center", "", "center"]}
+              mt={["","","","10rem"]}
             >
               <HomeContent />
-              <ImageHome />
+             
             </Flex>
             <Flex direction="column" h="100%" maxH="800px" w="100%">
               <ProjectsList />

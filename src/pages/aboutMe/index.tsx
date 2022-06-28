@@ -1,6 +1,5 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { Header } from "../../components/header-components";
-import { ImageHome } from "../../components/home-componets/backgroundImageHome-components";
 import { HomeContent } from "../../components/home-componets/home-content-components";
 import { motion } from "framer-motion";
 export const AboutMePage = () => {
@@ -52,18 +51,17 @@ export const AboutMePage = () => {
             colorScheme={"whiteAlpha"}
             textAlign="center"
             variant={["mobile", "primary", "primary"]}
-            m="2rem"
+            mt={["","","","10rem"]}
           >
                &#60;Sobre mim/&#62;
           </Heading>
           <Flex
             w="100%"
-            maxW="1100px"
+            maxW="1200px"
             align={["center", "center", ""]}
             justify={["center", "center", "", "center"]}
           >
             <HomeContent />
-            <ImageHome />
           </Flex>
           
         </Flex>

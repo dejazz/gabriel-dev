@@ -12,8 +12,8 @@ export const ImageHome = () => {
       <Image
         width={["", "", "70%"]}
         height={["", "", "70%"]}
-        maxW={["", "", "600px"]}
-        maxH={["", "", "600px"]}
+        maxW={["", "", "480px"]}
+        maxH={["", "", "480px"]}
         display={["none", "none", "flex", "none"]}
         src={require("../../imgs/Planet.png")}
         alt="Planet"
@@ -37,8 +37,8 @@ export const ImageHome = () => {
        
           width={["", "", "", "100%"]}
           height={["", "", "100%"]}
-          maxW={["", "", "420px"]}
-          maxH={["", "", "420px"]}        
+          maxW={["", "", "400px"]}
+          maxH={["", "", "400px"]}        
           src={require("../../imgs/centerPlanet.png")}
           alt="Planet"
         />
